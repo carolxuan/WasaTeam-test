@@ -1,4 +1,5 @@
 <template>
+  <Loading :active="isLoading" />
   <div class="about bg-primary">
     <div class="container text-white">
       <h2 class="l-title">About our teams</h2>
@@ -19,15 +20,18 @@ export default {
   name: 'About',
   data () {
     return {
-      temp: {}
+      temp: {},
+      isLoading: false
     }
   },
   methods: {
     getData () {
       const url = 'https://mocki.io/v1/497557a8-a2a1-4e5a-8b34-4025e9558793'
+      this.isLoading = true
       this.$http.get(url)
         .then(res => {
           this.temp = res.data
+          this.isLoading = false
         })
         .catch(err => {
           console.log(err)
