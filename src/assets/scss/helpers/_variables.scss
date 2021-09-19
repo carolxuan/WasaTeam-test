@@ -1,0 +1,35 @@
+// color
+$primary: #6F69AC;
+$secondary: #FD6F96;
+$green: #95DAC1;
+$yellow: #FFEBA1;
+$white: #ffffff;
+$dark: #000;
+
+// text
+$font-size: 20px;
+
+// text color
+.text-primary {
+  color: $primary;
+}
+.text-secondary {
+  color: $secondary;
+}
+.text-white {
+  color: $white;
+}
+
+// bg color
+.bg-primary {
+  background-color: $primary;
+}
+.bg-secondary {
+  background-color: $secondary;
+}
+.bg-green {
+  background-color: $green;
+}
+.bg-yellow {
+  background-color: $yellow;
+}

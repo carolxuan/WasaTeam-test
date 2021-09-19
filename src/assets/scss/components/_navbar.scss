@@ -1,0 +1,16 @@
+.navbar-nav {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .nav-item {
+    font-size: $font-size;
+    padding: 16px;
+    color: $dark;
+    text-decoration: none;
+    &:hover {
+      font-weight: 600;
+      color: $primary;
+    }
+  }
+}
